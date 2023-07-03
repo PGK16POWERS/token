@@ -1,8 +1,6 @@
 export function chopra() {   
     const uniProdRedi = document.querySelectorAll(".upr");
     const bar = document.querySelector(".burger");
-    const close = document.querySelector(".xmark");
-    const ctaBtn = document.querySelector("#spd-btn");
     const formA = document.querySelector("#newsletter-form");
  
     uniProdRedi.forEach((button) => {
@@ -26,20 +24,6 @@ export function chopra() {
     bar.addEventListener("click", () => {
         const nav = document.querySelector("nav");
         nav.classList.toggle("showflex");
-    });
-    close.addEventListener("click", () => {
-    const form = document.querySelector("#newsletter-form");
-    const bgColor = document.querySelector(".right-side-cta");
-    
-        form.classList.remove("showform");
-        bgColor.style.display = "flex";
-    });
-    ctaBtn.addEventListener("click", () => {
-    const form = document.querySelector("#newsletter-form");
-    const bgColor = document.querySelector(".right-side-cta");
-
-        form.classList.add("showform");
-        bgColor.style.display = "none";
     });
     formA.addEventListener("submit", (e) => {
     const nameInput = document.querySelector("#name");
