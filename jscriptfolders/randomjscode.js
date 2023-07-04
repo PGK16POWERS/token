@@ -1,7 +1,10 @@
 export function chopra() {   
     const uniProdRedi = document.querySelectorAll(".upr");
     const bar = document.querySelector(".burger");
+    const ctaBtn = document.querySelector("#spd-btn");
+    const close = document.querySelector(".xmark");
     const formA = document.querySelector("#newsletter-form");
+    const formbtn = document.querySelector("#form-sub-btn");
  
     uniProdRedi.forEach((button) => {
         button.addEventListener("click",() => {
@@ -25,6 +28,20 @@ export function chopra() {
         const nav = document.querySelector("nav");
         nav.classList.toggle("showflex");
     });
+    ctaBtn.addEventListener("click", () => {
+        const form = document.querySelector("#newsletter-form");
+        const bgColor = document.querySelector(".right-side-cta");
+    
+            form.classList.add("showform");
+            bgColor.style.display = "none";
+        });
+    close.addEventListener("click", () => {
+        const form = document.querySelector("#newsletter-form");
+        const bgColor = document.querySelector(".right-side-cta");
+        
+            form.classList.remove("showform");
+            bgColor.style.display = "flex";
+        });
     formA.addEventListener("submit", (e) => {
     const nameInput = document.querySelector("#name");
     const numInput = document.querySelector("#number");
@@ -32,6 +49,7 @@ export function chopra() {
     const nameErrMess = document.querySelector(".name-inp-err");
     const numErrMess = document.querySelector(".num-inp-err");
     const emailErrMess = document.querySelector(".email-inp-err");
+    const successMessage = "Thank you for signing up!";
 
     if (nameInput.value.length === 0) {
         e.preventDefault();
@@ -86,5 +104,11 @@ export function chopra() {
         emailInput.classList.add("succborder");
     }
 
-    });
+    if (!nameErrMess.innerHTML && !numErrMess.innerHTML && !emailErrMess.innerHTML) {
+
+        formA.classList.remove("showform");
+        alert(successMessage);
+        formA.reset();
     }
+    });
+}

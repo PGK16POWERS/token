@@ -266,22 +266,124 @@ background: linear-gradient(0deg, rgba(244,240,232,1) 65%, rgba(190,190,190,1) 1
   line-height: 28px;
   max-width: 600px;
 }
-.frm-h2 {
-  font-family:  var(--pops);
-  letter-spacing: 2px;
-  color: snow;
-  font-weight: 300;
-}
-#mc_embed_signup {
-  border: 0 solid transparent;
+#newsletter-form {
+  position: relative;
+  width: 400px;
+  border: 2px solid rgb(228, 228, 228);
   border-radius: 7px;
-  background: linear-gradient(to left, #f4ecc4, #e4f6a2, #f6b0cb);
-  padding:1rem;
-  clear:left; 
-  font:14px Helvetica,Arial,sans-serif; 
-  width: 450px;
+  padding: 1rem;
+  height: fit-content;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+  background-color: #f7f7f7;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  z-index: 2;
 }
-
+.xmark {
+  position: absolute;
+  right: 10px;
+  opacity: 40%;
+  cursor: pointer;
+  font-size: 30px;
+}
+.material-symbols-outlined:hover,
+.material-symbols-outlined:active {
+  opacity: 100%;
+}
+.showform {
+  display: flex !important;
+}
+.blur {
+  filter: blur(2px);
+}
+.form-header {
+  font-size: 2.3em;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #555;
+}
+  label {
+  font-size: 1.3em;
+  letter-spacing: 1px;
+  font-weight: 300;
+  padding-left: 3px;
+  color: #555;
+}
+  .form-con-div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  row-gap: 1rem;
+  }
+  .fcd-kid {
+  display: flex;
+  flex-direction: column;
+}
+input {
+  border: 2px solid hsla(0, 0%, 93%, 0.975);
+  border-radius: 3px;
+  font-weight: 200;
+  padding: 0.5rem 5px;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  font-family: 'Nunito', sans-serif;
+}
+  input:focus {
+  outline: 2px solid rgb(206, 206, 206);
+  }
+  #form-sub-btn {
+    border: 2px solid transparent;
+    border-radius: 3px;
+    padding: 0.8rem 0;
+    width: 100%;
+    font-size: 1.1em;
+    font-weight: 300;
+    letter-spacing: 1px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+  }
+  #form-sub-btn:hover,
+  #form-sub-btn:active {
+  background-color: #0056b3;
+  }
+  .errborder {
+  border:2px solid rgb(254, 0, 42);
+  outline: none;
+  }
+  .succborder {
+  border:2px solid rgb(8, 254, 0);
+  outline: none;
+  }
+  .right-side-cta {
+  border: 2px solid transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 1rem;
+  width: 90%;
+}
+#spd-btn {
+  border: 2px solid transparent;
+  border-radius: 7px;
+  padding: 0.5rem 1rem;
+  font-size: 1.2em;
+  letter-spacing: 2px;
+  font-family: var(--pops);
+  color: rgb(187, 66, 6);
+  background-color: #f8efef;
+  font-weight: 300;
+  box-shadow: 0 2px 5px 2px rgba(76, 75, 75, 0.525);
+}
+#spd-btn:hover,
+#spd-btn:active {
+  color: rgb(252, 205, 182);
+  background-color: #535353;
+}
 
 
 /**** CALL TO ACTION SECTION ****/
