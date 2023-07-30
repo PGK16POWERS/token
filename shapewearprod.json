@@ -1,0 +1,110 @@
+[
+    {
+        "id": 1,
+        "name": "Lumbar Modular Post",
+        "image": "lipolumbarboard.png",
+        "description": "Modular support for enhanced recovery.",
+        "price": 300.00,
+        "add-pictures": ["lipolumbarboard.png", "ipolumbarboard1.png", "ipolumbarboard2.png", "ipolumbarboard3.png", "ipolumbarboard4.png", "ipolumbarboard5.png", "ipolumbarboard6.png", "ipolumbarboard7.png"],
+        "longDescription": "This innovative support board aids in post-surgery recovery, providing targeted compression and stability to the lumbar region for enhanced healing and comfort.",
+        "availSizes": "Standard for All",
+        "colors": "Standard for for all products",
+        "stock": "Available"
+    },
+    {
+        "id": 2,
+        "name": "5m Compres. Band",
+        "image": "compressionband6.jpg",
+        "description": "Elastic, versatile, aids in injury recovery and support.",
+        "price": 450.00,
+        "add-pictures": ["compressionband6.jpg", "compressionband1.jpg", "compressionband2.jpg", "compressionband3.jpg", "compressionband4.jpg", "compressionband5.jpg"],
+        "longDescription": "This elastic and versatile band helps with injury recovery and support, providing relief and assistance during physical activities or rehabilitation.",
+        "availSizes": "Standard for All",
+        "colors": "Standard for for all products",
+        "stock": "Unavailable"
+    },
+    {
+        "id": 3,
+        "name": "4m Compres. Band",
+        "image": "compressionband11.png",
+        "description": "4 metre Compression Band: Elastic, versatile, aids in injury recovery and support.",
+        "price": 350.00,
+        "add-pictures": ["compressionband11.png", "compressionband7.jpg", "compressionband8.jpg", "compressionband9.png", "compressionband10.png", "compressionband12.png"],
+        "longDescription": "This elastic and versatile band helps with injury recovery and support, providing relief and assistance during physical activities or rehabilitation.",
+        "availSizes": "Standard for All",
+        "colors": "Standard for for all products",
+        "stock": "Low Stock"
+    },
+    {
+        "id": 4,
+        "name": "XL - Sauna Training Suit",
+        "image": "waisttrainer1.jpg",
+        "description": "Heat-reflective gear for intense workouts and weight loss.",
+        "price": 350.00,
+        "add-pictures": ["waisttrainer1.jpg", "waisttrainer2.jpeg", "waisttrainer3.png", "waisttrainer4.png", "waisttrainer5.png", "waisttrainer6.png", "waisttrainer7.png", "waisttrainer8.png"],
+        "longDescription": "This heat-reflective gear intensifies workouts, promoting weight loss by trapping body heat for an effective and sweat-inducing training experience.",
+        "availSizes": "Standard for All",
+        "colors": "Standard for for all products",
+        "stock": "Unavailable"
+    },
+    {
+        "id": 5,
+        "name": "XL - Strapless front hook faja",
+        "image": "straplessfaja2.jpeg",
+        "description": "Comfortable compression garment for shaping and support.",
+        "price": 350.00,
+        "add-pictures": ["straplessfaja2.jpeg", "straplessfaja1.jpeg", "straplessfaja3.jpeg"],
+        "longDescription": "Comfort meets support with this strapless compression garment, providing shaping benefits with a convenient front hook closure for easy wear and removal.",
+        "availSizes": "Standard for All",
+        "colors": "Standard for for all products",
+        "stock": "Available"
+    },
+    {
+        "id": 6,
+        "name": "XL - High-waist Sauna shape shorts",
+        "image":  "highwaistshapeshorts5.jpg",
+        "description": "Heat-trapping shorts for sculpting and slimming effect.",
+        "price": 280.00,
+        "add-pictures": ["highwaistshapeshorts5.jpg", "highwaistshapeshorts4.jpeg", "highwaistshapeshorts3.jpeg", "highwaistshapeshorts1.png"],
+        "longDescription": " These heat-trapping shorts offer maximum slimming and sculpting effects, making them ideal for enhancing workouts and achieving a more defined waistline.",
+        "availSizes": "Standard for All",
+        "colors": "Standard for for all products",
+        "stock": "Available"
+    },
+    {
+        "id": 7,
+        "name": "L - black Neoprene double belt waist training vest",
+        "image": "doublebeltwaisttraner1.png",
+        "description": "Slimming and supporting vest for effective waist training.",
+        "price": 500.00,
+        "add-pictures": ["doublebeltwaisttraner1.png", "doublebeltwaisttraner2.png", "doublebeltwaisttraner3.png", "doublebeltwaisttraner4.png", "doublebeltwaisttraner5.png", "doublebeltwaisttraner6.png", "doublebeltwaisttraner7.png"],
+        "longDescription": "This waist trainer vest, crafted with neoprene and double belts, provides excellent compression and support for effective waist training and posture improvement.",
+        "availSizes": "Standard for All",
+        "colors": "Standard for for all products",
+        "stock": "Available"
+    },
+    {
+        "id": 8,
+        "name": "M - black extra-high waist sauna shorts",
+        "image": "extrahighwaistsaunashorts1.png",
+        "description": "Heat-trapping shorts for maximum slimming and shaping.",
+        "price": 310.00,
+        "add-pictures": ["extrahighwaistsaunashorts1.png", "extrahighwaistsaunashorts2.png", "extrahighwaistsaunashorts3.png", "extrahighwaistsaunashorts4.png", "extrahighwaistsaunashorts5.png", "extrahighwaistsaunashorts6.png", "extrahighwaistsaunashorts7.png", "extrahighwaistsaunashorts8.png", "extrahighwaistsaunashorts9.png", "extrahighwaistsaunashorts10.png"],
+        "longDescription": "Designed to trap heat and promote sweating, these black sauna shorts help slim and shape the waist area during workouts, enhancing the effects of exercise.",
+        "availSizes": "Standard for All",
+        "colors": "Standard for for all products",
+        "stock": "Available"
+    },
+    {
+        "id": 9,
+        "name": "U-Front shaper bodysuit",
+        "image": "fronthookwaistrtrainerband3.png",
+        "description": "Slimming band with front hook closure for shaping.",
+        "price": 400.00,
+        "add-pictures": ["fronthookwaistrtrainerband3.png", "fronthookwaistrtrainerband1.png", "fronthookwaistrtrainerband2.png", "fronthookwaistrtrainerband4.png", "fronthookwaistrtrainerband5.png", "fronthookwaistrtrainerband6.png","fronthookwaistrtrainerband7.png", "fronthookwaistrtrainerband8.png"],
+        "longDescription": "This latex waist trainer band, equipped with a front hook closure, offers comfortable compression and effective waist shaping, helping achieve desired body contours.",
+        "availSizes": "Standard for All",
+        "colors": "Standard for for all products",
+        "stock": "Available"
+    }
+]

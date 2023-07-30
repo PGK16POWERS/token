@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "African Black Soap",
+        "image": "soapbarre1.png",
+        "description": "Natural African cleansing soap made from plantains, cocoa pods; aids skin conditions.",
+        "price": 60.00,
+        "add-pictures": ["soapbarre1.png", "soapbar2.jpeg", "soapbar1.jpeg", "soapbarre2.png", "soapbarfro.png"],
+        "longDescription": "Raw black soap is a natural African cleansing soap made from plantains, cocoa pods, and other organic ingredients. It's known for its gentle exfoliating and soothing properties, suitable for various skin types.",
+        "availSizes": "Standard for All",
+        "colors": "Standard for for all products",
+        "stock": "Available"
+    },
+    {
+        "id": 2,
+        "name": "1kg Pure Shea Butter",
+        "image": "sheabutter1.png",
+        "description": "Rich 1kg natural moisturizer from shea nuts; nourishes and softens skin.",
+        "price": 350.00,
+        "add-pictures": ["sheabutter1.png", "sheabutter2.png", "sheabutter3.png"],
+        "longDescription": "Sourced from shea nuts, this natural moisturizer deeply nourishes and softens skin, providing a luxurious and rejuvenating experience.",
+        "availSizes": "Standard for All",
+        "colors": "Standard for for all products",
+        "stock": "Available"
+    },
+    {
+        "id": 3,
+        "name": "250g Pure Shea Butter",
+        "image": "250gsheabutter.png",
+        "description": "Rich 250g natural moisturizer from shea nuts; nourishes and softens skin.",
+        "price": 110.00,
+        "add-pictures": ["sheabutter4.png", "sheabutter5.png", "sheabutter6.png"],
+        "longDescription": "Sourced from shea nuts, this natural moisturizer deeply nourishes and softens skin, providing a luxurious and rejuvenating experience.",
+        "availSizes": "Standard for All",
+        "colors": "Standard for for all products",
+        "stock": "Available"
+    },
+    {
+        "id": 4,
+        "name": "100g Pure Shea Butter",
+        "image": "sheabutter7.png",
+        "description": "Rich 100g natural moisturizer from shea nuts; nourishes and softens skin.",
+        "price": 60.00,
+        "add-pictures": ["sheabutter7.png", "sheabutter8.png", "sheabutter9.png"],
+        "longDescription": "Sourced from shea nuts, this natural moisturizer deeply nourishes and softens skin, providing a luxurious and rejuvenating experience.",
+        "availSizes": "Standard for All",
+        "colors": "Standard for for all products",
+        "stock": "Available"
+    }
+]

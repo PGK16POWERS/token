@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "name": "NAH Wig & Weave Spray",
+        "image": "hairprod1.png",
+        "description": "Haircare product for maintaining and refreshing wigs and weaves.",
+        "price": 80.00,
+        "add-pictures": ["hairprod1.png", "hairprod2.png", "hairprod5.png"],
+        "longDescription": "Specifically formulated for wigs and weaves, this haircare product keeps them looking fresh and revitalized, maintaining their natural appearance and texture.",
+        "availSizes": "Standard for All",
+        "colors": "Standard for for all products",
+        "stock": "Available"
+    }
+]
