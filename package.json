@@ -8,6 +8,7 @@
     "firebase": "^9.23.0",
     "helmet": "^7.0.0",
     "jwks-rsa": "^3.0.1",
+    "mongoose": "^7.4.1",
     "mysql2": "^3.4.0",
     "nodemon": "^1.14.9"
   },
@@ -16,7 +17,6 @@
   "description": "NAH PRODUCTS SERVER.",
   "main": "node.js",
   "scripts": {
-    "start":"node node.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "MARJELLA MARKETING MEDIA (MMM)",
