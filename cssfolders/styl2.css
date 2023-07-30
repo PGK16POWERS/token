@@ -1,0 +1,340 @@
+* {
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --nuns: 'Nunito', sans-serif;
+    --pops: 'Poppins', sans-serif;
+    --mulls: 'Mulish', sans-serif;
+    --monts: 'Montserrat', sans-serif;
+}
+/**** HEADER SECTION ****/
+header {
+    position: relative;
+    padding: 0 2rem;
+}
+#undo {
+    cursor: pointer;
+    font-size: 40px;
+}
+#undo:hover,
+#undo:active {
+    border: 0 solid transparent;
+    color: rgb(255, 0, 81);
+}
+.noflex {
+    display: none !important;
+}
+.showflex {
+    display: block !important;
+}
+/**** HEADER SECTION ****/
+/**** WHOLE CARD ****/
+.whole-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    width: auto;
+    height: 100%;
+}
+.all-arr-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem ;
+}
+.header-sec {
+    min-height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.under-line {
+    height: 2px;
+    width: 230px;
+    background-color: #6a6c6d6f;
+    margin-top: 0.5rem;
+}
+.new-arr-header {
+    font-size: 1.7em;
+    letter-spacing: 2px;
+    font-family: var(--pops);
+    font-weight:300;
+}
+.prod-info-btn:active,
+.prod-info-btn:hover {
+    background-color: #f34e1c;
+}
+/**** WHOLE CARD ****/
+/**** SHELF SECTION ****/
+.shelf {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/**** SHELF SECTION ****/
+/**** FRONTCARD SECTION ****/
+.item-card { 
+    position: relative;
+    display: flex;
+    padding-top: 1rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+    height: 550px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+.img-area {
+    position: relative;
+    width: 80%;
+    height: 250px;
+    border-radius: 4px;
+}
+.card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: inherit;
+}
+.card-headers {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 10px;
+    text-align: center;
+}
+.name-of-item {
+    font-size: 1.5em;
+    letter-spacing: 1.5px;
+    font-family: var(--monts);
+    width: 90%;
+    font-weight: 500;
+    color: #424242;
+}
+.prod-div-line {
+    height: 2px;
+    width: 200px;
+    background-color: #e8e8e8;
+}
+.desc-of-item {
+    font-size: 1em;
+    letter-spacing: 1px;
+    font-family: var(--nuns);
+    font-weight: 300;
+    width: 90%;
+    color: #858585;
+}
+.prod-price {
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    font-weight: 300;
+    color: #6e6e6e;
+    font-family: var(--monts);
+}
+.prod-info-btn {
+    position: relative;
+    height: 90px;
+    width: 100%;
+    background-color: #f56b41;
+    border: 0 solid transparent;
+    border-radius: 0 0 5px 5px;
+    font-size: 1.4em;
+    letter-spacing: 2px;
+    font-family: var(--pops);
+    font-weight: 400;
+    color: #fff
+}
+/**** FRONTCARD SECTION ****/
+/**** DESCRIPTION CARD ****/
+.after-click {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    max-width: 700px;
+    width: 100%;
+    height: 100%;
+    margin: 0.5rem;
+    gap:1rem;
+    border-radius: 16px;
+    padding: 0.5rem;
+}
+.top-block {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+#remove-pro-desc {
+    border-radius: 7px;
+    cursor: pointer;
+    color: rgb(200, 200, 200);
+    font-size: 40px;
+}
+#remove-pro-desc:hover, #remove-pro-desc:active {
+    color: rgb(52, 48, 50);
+}
+.picture-desc {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    width: 100%;
+}
+.pd-parent-altrd {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+.slideshow {
+    position: relative;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+}
+.slideshow img {
+    display: none;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border: 0px solid transparent;
+    border-radius: 16px;
+}
+.slideshow img:first-child {
+    display: block;
+}
+.content-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+    margin: 1rem 0.5rem;
+}
+.cont-header {
+    font-size: 1.7em;
+    letter-spacing: 1.5px;
+    font-family: var(--monts);
+    font-weight: 400;
+}
+.cont-para {
+    font-size: 1em;
+    letter-spacing: 1px;
+    font-weight: 300;
+    font-family: var(--pops);
+}
+.prevbtn, .nextbtn {
+    position: absolute;
+    top: 50%;
+    border: 0 solid transparent;
+    border-radius: 7px;
+    transform: translateY(-50%);
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+    padding: 8px 12px;
+    cursor: pointer;
+    opacity: 20%;
+}
+.prevbtn {
+    left: 0px;
+}
+.nextbtn {
+    right: 0px;
+}
+.prevbtn:hover, .nextbtn:hover {
+    background-color: #555;
+    opacity: 40%;
+}
+.sizes-and-colors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-self: center;
+    margin: 1rem 0;
+    gap: 1rem;
+    background-color: #eaeaea5e;
+    border-radius: 10px;
+    padding: 10px;
+}
+.add-div {
+    width: 200px;
+}
+.hea-sac {
+    font-family: var(--monts);
+    font-weight: 500;
+    margin-left: 5px;
+    letter-spacing: 1.5px;
+}
+.add-info {
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    font-weight: 300;
+    font-family: var(--nuns);
+    letter-spacing: 1px;
+    margin-left: 5px;
+}
+.checkout {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    padding: 0.5rem;
+}
+.price-tag {
+    font-size: 2em;
+    font-family: var(--monts);
+    font-weight: 300;
+}
+.btn-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+#checkoutBtn {
+    border: 2px solid transparent;
+    border-radius: 3px;
+    padding: 0.8rem 0;
+    width: 100%;
+    font-size: 1.5em;
+    font-family: var(--pops);
+    font-weight: 300;
+    letter-spacing: 2px;
+    background-color: #767d86;
+    opacity: 20%;
+    color: #030b12;
+    cursor: pointer;
+}
+#wa-redi {
+    font-size: 33px;
+    background-color: #25D366;
+    width: 100%;
+    height: 100%;
+    padding: 0.8rem 1rem;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+#wa-redi:hover, #wa-redi:active {
+    background-color: #00e454;
+}
+.whi {
+    color: white;
+}
+/**** DESCRIPTION CARD ****/

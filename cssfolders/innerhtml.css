@@ -1,0 +1,57 @@
+/**** PRODUCT LINE UP ****/
+.prod-line-up {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 50vh;
+    margin: 0 1rem 1rem 1rem;
+    border-radius: 16px;
+    gap: 1rem;
+    margin-top: 1.5rem ;
+}
+.prod-child {
+    background-color: grey;
+    height: 220px;
+    width: 500px;
+    border: 0 solid transparent;
+    border-radius: 16px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.prod-child:hover,
+.prod-child:active {
+    box-shadow: 0 2px 4px 5px #c7c7c68c;
+    transform: scale(101%);
+    background-position: 0 -5px;
+}
+.prod-child:nth-child(1) {
+    background-image: url(newarr.png);
+    background-position: 0 -100px;
+}
+.prod-child:nth-child(2) {
+    background-image: url(skincarediv.png);
+    background-position: 0 -90px;
+}
+.prod-child:nth-child(3) {
+    background-image: url(shapewearproddiv.png);
+    background-position: 0 -90px;
+}
+.prod-child:nth-child(4) {
+    background-image: url(hairproddiv.png);
+    background-position: 0 -90px;
+}
+.prod-child:nth-child(5) {
+    background-image: url(fragprodDiv.png);
+    background-position: 0 -90px;
+}
+.modal-name {
+    font-size: 2em;
+    letter-spacing: 2px;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-family: var(--mulls);
+    font-weight: 800;
+    color: #fbfaf9;
+}
+/**** PRODUCT LINE UP ****/
