@@ -25,27 +25,27 @@ const config = {
 app.use(auth(config));
 
 app.get("/",(req,res) => {
-    res.status(200).sendFile(path.join(__dirname,'htmlfolders', "index.html"));
+    res.status(200).sendFile(path.join(__dirname, "index.html"));
 })
 
-app.get("/innerlayout", requiresAuth(), (req,res)=> {
-    res.sendFile(path.join(__dirname,'htmlfolders', 'innerlayout.html'));
+app.get("/innerlayout", /* requiresAuth() */ (req,res)=> {
+    res.sendFile(path.join(__dirname,'innerlayout.html'));
 });
 
-app.get("/skincare-products", requiresAuth(), (req,res)=> {
-    res.sendFile(path.join(__dirname,'htmlfolders', 'skincare-products.html'));
+app.get("/skincare-products",  /* requiresAuth() */ (req,res)=> {
+    res.sendFile(path.join(__dirname,'skincare-products.html'));
 });
 
-app.get("/Shapewear", requiresAuth(), (req,res)=> {
-    res.sendFile(path.join(__dirname,'htmlfolders' , 'Shapewear.html'));
+app.get("/Shapewear",  /* requiresAuth() */ (req,res)=> {
+    res.sendFile(path.join(__dirname,'Shapewear.html'));
 });
 
-app.get("/hairproducts", requiresAuth(), (req,res)=> {
-    res.sendFile(path.join(__dirname,'htmlfolders', 'hairproducts.html'));
+app.get("/hairproducts",  /* requiresAuth() */ (req,res)=> {
+    res.sendFile(path.join(__dirname,'hairproducts.html'));
 });
 
-app.get("/perfumepage", requiresAuth(), (req,res)=> {
-    res.sendFile(path.join(__dirname,'htmlfolders', 'perfumepage.html'));
+app.get("/perfumepage",  /* requiresAuth() */ (req,res)=> {
+    res.sendFile(path.join(__dirname,'perfumepage.html'));
 });
 
 app.get("/logout", (req,res) => {
