@@ -339,13 +339,24 @@ h1 {
 }
 @media (max-width: 700px) {
   #cta-newsletter {
-  padding: 0.7rem;
+  position: relative;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  background-color: #F2F1EC;
+  background: linear-gradient(135deg, #808080cc, rgba(0, 0, 0, 0.4));
+  padding: 1.5rem 0.8rem;
+  border-radius:  0 0 16px 16px;
+  fill: #F2F1EC;
 }
   .cta-rig-header {
   font-size: 2em;
 }
   .cta-para {
-  font-size: 0.8em; /* Adjust the font size for better mobile readability */
+    font-size: 0.8em; /* Adjust the font size for better mobile readability */
+    line-height: 25px;
 }
   .newsletter-button {
   font-size: 1em;
