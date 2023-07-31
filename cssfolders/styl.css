@@ -168,7 +168,7 @@ h1 {
 } 
 @media (max-width: 700px) {
   .abo-para {
-  font-size: 1em; /* Adjust the font size for better mobile readability */
+  font-size: 0.8em; /* Adjust the font size for better mobile readability */
 }
   .sec-header {
   font-size: 1.5em;
@@ -226,6 +226,29 @@ h1 {
   width: 80%;
   border: 2px solid transparent;
   border-radius: 7px
+}
+@media (max-width: 800px) {
+  .prod-card {
+  position: relative;
+  padding: 1rem;
+  display: var(--wk-flex);
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #fefaee78;
+  border-radius: 7px;
+  background-color: #fffaf0;
+  text-align: center;
+  cursor: pointer;
+  width: 350px;
+}
+  .prod-card h3 {
+  font-size: 1.2em;
+  font-weight: 400;
+}
+  .prod-card p {
+  font-size: 1em;
+  margin-bottom: 0.5rem;
+}
 }
 /**** FEATURED-PRODUCTS SECTION ****/
 /**** CALL TO ACTION SECTION ****/
@@ -316,31 +339,20 @@ h1 {
 }
 @media (max-width: 700px) {
   #cta-newsletter {
-  position: relative;
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-  justify-content: center;
-  min-height: 50vh;
-  background-color: #F2F1EC;
-  background: linear-gradient(135deg, #808080cc, rgba(0, 0, 0, 0.4));
-  padding: 1rem;
-  border-radius:  0 0 16px 16px;
-  fill: #F2F1EC;
+  padding: 0.7rem;
 }
   .cta-rig-header {
   font-size: 2em;
 }
   .cta-para {
-  font-size: 1em; /* Adjust the font size for better mobile readability */
+  font-size: 0.8em; /* Adjust the font size for better mobile readability */
 }
   .newsletter-button {
-  font-size: 1.1em;
+  font-size: 1em;
   font-weight: 400;
   font-family: var(--pops);
   letter-spacing: 2px;
-  padding: 0.7rem 1rem;
-  width: 150px;
+  padding: 0.8rem 1rem;
   color: white;
   background-color: rgb(252, 205, 182);
   border: 0 solid transparent;
