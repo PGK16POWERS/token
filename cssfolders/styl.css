@@ -83,7 +83,7 @@ nav {
   width: 50px;
 }@media (max-width: 800px) {
     header {
-    height: 13vh;
+    height: 11vh;
   }
     nav {
       position: absolute;
@@ -92,8 +92,8 @@ nav {
       left:0;
       width: 100vw;
       background-color: #F2F1EC;
-      min-height: 53vh;
-      top: -53vh;
+      min-height: 51vh;
+      top: -51vh;
       transition-duration: 0.7s;
       opacity: 10%;
       border-radius: 0 0 7px 7px;
