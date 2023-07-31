@@ -347,7 +347,7 @@ h1 {
   min-height: 50vh;
   background-color: #F2F1EC;
   background: linear-gradient(135deg, #808080cc, rgba(0, 0, 0, 0.4));
-  padding: 1.5rem 0.8rem;
+  padding: 2rem 0.9rem;
   border-radius:  0 0 16px 16px;
   fill: #F2F1EC;
 }
@@ -355,7 +355,7 @@ h1 {
   font-size: 2em;
 }
   .cta-para {
-    font-size: 0.8em; /* Adjust the font size for better mobile readability */
+    font-size: 0.9em; /* Adjust the font size for better mobile readability */
     line-height: 25px;
 }
   .newsletter-button {
