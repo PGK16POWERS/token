@@ -54,4 +54,13 @@
     font-weight: 800;
     color: #fbfaf9;
 }
+@media (max-width: 700px) {
+    .modal-name {
+    font-size: 1.5em;
+    margin-left: 5px;
+    margin-top: 5px;
+    font-weight: 700;
+}
+
+}
 /**** PRODUCT LINE UP ****/
