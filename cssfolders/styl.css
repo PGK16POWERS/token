@@ -81,6 +81,23 @@ nav {
 }
 .clogo-h {
   width: 50px;
+}@media (max-width: 800px) {
+    header {
+    height: 13vh;
+  }
+    nav {
+      position: absolute;
+      display:flex;
+      justify-content: center;
+      left:0;
+      width: 100vw;
+      background-color: #F2F1EC;
+      min-height: 53vh;
+      top: -53vh;
+      transition-duration: 0.7s;
+      opacity: 10%;
+      border-radius: 0 0 7px 7px;
+}
 }
 /**** HEADER SECTION ****/
 /**** LANDING PAGE SECTION ****/
