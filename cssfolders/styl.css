@@ -144,6 +144,19 @@ h1 {
   color:hsla(194, 18%, 14%, 0.975);
   box-shadow: 0 2px 10px 5px rgba(255, 255, 255, 0.706);
 }
+@media (max-width: 800px) {
+  .landing-sect {
+  height: 100vh;
+  position: relative;
+  background: rgb(190,190,190);
+  background: linear-gradient(0deg, rgba(190,190,190,1) 0%, rgba(230,225,216,1) 51%, rgba(231,229,225,1) 100%);
+  display: var(--wk-flex);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+}
 /**** LANDING PAGE SECTION ****/
 /**** ABOUT SECTION ****/
 #about {
@@ -364,7 +377,7 @@ h1 {
   min-height: 50vh;
   background-color: #F2F1EC;
   background: linear-gradient(135deg, #808080cc, rgba(0, 0, 0, 0.4));
-  padding: 2rem 0.9rem;
+  padding: 2.5rem 0.9rem;
   border-radius:  0 0 16px 16px;
   fill: #F2F1EC;
 }
