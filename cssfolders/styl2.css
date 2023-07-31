@@ -404,8 +404,9 @@ header {
     .price-tag {
     font-size: 1.7em;
     font-family: var(--monts);
-    font-weight: 400;
+    font-weight: 300;
     letter-spacing: 1px;
+    margin-left: 5px;
 }
     .btn-div {
     gap: 0.3rem;
