@@ -74,6 +74,18 @@ header {
 .prod-info-btn:hover {
     background-color: #f34e1c;
 }
+@media (max-width: 800px) {
+    .whole-card {S
+    padding: 0.3rem;
+}
+    .new-arr-header {
+    font-size: 1.4em;
+    letter-spacing: 2px;
+    font-family: var(--pops);
+    font-weight:300;
+}
+
+}
 /**** WHOLE CARD ****/
 /**** SHELF SECTION ****/
 .shelf {
@@ -157,6 +169,29 @@ header {
     font-weight: 400;
     color: #fff
 }
+@media (max-width: 800px) {
+    .name-of-item {
+    font-size: 1.3em;
+    letter-spacing: 1.5px;
+    font-family: var(--monts);
+    width: 90%;
+    font-weight: 500;
+    color: #424242;
+}
+.prod-info-btn {
+    position: relative;
+    height: 75px;
+    width: 100%;
+    background-color: #f56b41;
+    border: 0 solid transparent;
+    border-radius: 0 0 5px 5px;
+    font-size: 1.2em;
+    letter-spacing: 2px;
+    font-family: var(--pops);
+    font-weight: 400;
+    color: #fff
+}
+}
 /**** FRONTCARD SECTION ****/
 /**** DESCRIPTION CARD ****/
 .after-click {
@@ -178,7 +213,7 @@ header {
     justify-content: flex-end;
 }
 #remove-pro-desc {
-    border-radius: 7px;
+    border-radius: 5px;
     cursor: pointer;
     color: rgb(200, 200, 200);
     font-size: 40px;
@@ -336,5 +371,47 @@ header {
 }
 .whi {
     color: white;
+}
+@media (max-width: 800px) {
+    .cont-header {
+    font-size: 1.5em;
+}
+    .cont-para {
+    font-size: 0.9em;
+}
+    .add-div {
+    width: 100%;
+}
+    .hea-sac {
+    font-size: 1.2em;
+}
+    .add-info {
+    font-size: 0.9em;
+}
+    .checkout {
+    row-gap: 1.5rem;
+    padding: 0rem;
+}
+    .price-tag {
+    font-size: 1.7em;
+    font-family: var(--monts);
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+    .btn-div {
+    gap: 0.3rem;
+}
+    .prevbtn, .nextbtn {
+    position: absolute;
+    top: 50%;
+    border: 0 solid transparent;
+    border-radius: 7px;
+    transform: translateY(-50%);
+    background-color: #333;
+    color: #fff;
+    font-size: 12px;
+    padding: 6px 9px;
+    cursor: pointer;
+    
 }
 /**** DESCRIPTION CARD ****/
