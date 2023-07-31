@@ -146,7 +146,7 @@ h1 {
 }
 @media (max-width: 800px) {
   .landing-sect {
-  height: 100vh;
+  height: 80vh;
   position: relative;
   background: rgb(190,190,190);
   background: linear-gradient(0deg, rgba(190,190,190,1) 0%, rgba(230,225,216,1) 51%, rgba(231,229,225,1) 100%);
