@@ -30,7 +30,7 @@ header {
   align-items: center;
   padding: 0 1rem;
   height: 10vh;
-  backdrop-filter: blur(10px);
+  background-color: #F2F1EC;
   box-shadow: 1px 1px 10px 1px hsla(0, 0%, 48%, 0.233);
   z-index: 2;
   width: 100vw;
