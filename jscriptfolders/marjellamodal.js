@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", ()=> {
 
     const marjellaimg = document.createElement("img");
     marjellaimg.setAttribute("class", "marjellaimg");
-    marjellaimg.src = "heyy1.png";
+    marjellaimg.src = "Heyy1.png";
     modalDiv.appendChild(marjellaimg);
 
     const modalHeader = document.createElement("h1");
