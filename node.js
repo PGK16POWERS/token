@@ -32,5 +32,5 @@ app.get("/perfumepage", (req,res)=> {
 });
 
 app.listen(4500, () => {
-    console.log("Danko supreme!!!!!!!");
+    console.log("server connected on port 4500");
 });

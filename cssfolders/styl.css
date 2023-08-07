@@ -276,7 +276,8 @@ h1 {
   font-weight: 400;
 }
   .prod-card p {
-  font-size: 1em;
+  font-size: 1.1em;
+  width: 80%;
   margin-bottom: 0.5rem;
 }
 }
@@ -339,22 +340,17 @@ h1 {
   border: 0 solid transparent;
   border-radius: 5px;
 }
-#mc-embedded-subscribe {
-  background-color: rgb(255, 85, 0) !important;
-  font-size: 1.2em !important;
-  letter-spacing: 1px !important;
-  margin: 0.5rem 0 0.5rem !important;
+#signUpForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 0.5rem;
+  background-color: #F2F1EC;
+  padding: 1.5rem 1rem;
 }
-.newsletter-button:hover, .newsletter-button:active {
-  background-color: rgb(246, 173, 136);
-}
-#mc_embed_signup {
-  border-radius: 7px;
-  background: white;
-  padding:1rem;
-  clear:left; 
-  font:14px Helvetica,Arial,sans-serif; 
-  width: 350px;
+.formHeader {
+  font-size: 1.5em;
+  letter-spacing: 1px;
 }
 #signUp {
   display: none;
@@ -385,7 +381,7 @@ h1 {
   font-size: 2em;
 }
   .cta-para {
-    font-size: 0.9em; /* Adjust the font size for better mobile readability */
+    font-size: 1em; /* Adjust the font size for better mobile readability */
     line-height: 25px;
 }
   .newsletter-button {
