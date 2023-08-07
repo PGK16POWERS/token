@@ -347,20 +347,65 @@ h1 {
   row-gap: 0.5rem;
   background-color: #F2F1EC;
   padding: 1.5rem 1rem;
+  border: 0 solid transparent;
+  border-radius: 5px;
+  width: 350px;
+
 }
 .formHeader {
-  font-size: 1.5em;
+  font-size: 1.6em;
   letter-spacing: 1px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  font-family: var(--pops);
+}
+.formContParent {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.7rem;
+  width: 100%;
+}
+.formChild {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.3rem;
+}
+label {
+  font-size: 1.3em;
+  letter-spacing: 1.5px;
+  font-family: var(--nuns);
+  font-weight: 300;
+  margin-left: 3px;
+}
+input {
+  padding: 9px 12px;
+  font-size: 1.1em;
+  letter-spacing: 1.5px;
+  font-family: var(--pops);
+  border: 1px solid #b6b6b6;
+  border-radius: 4px;
+}
+.subbutton {
+  margin-top: 1rem;
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1.3em;
+  letter-spacing: 2px;
+  color: white;
+  background-color: rgb(255, 133, 71);
+  border: 0 solid transparent;
+  font-weight: 400;
+  font-family: var(--pops);
 }
 #signUp {
   display: none;
 }
 #remove {
   position: absolute;
+  top: 2px;
+  right: 2px;
   font-size: 40px;
   cursor: pointer;
-  right: 5px;
-  top: 3px;
   color: rgb(220, 220, 220);
 }
 @media (max-width: 700px) {
@@ -373,7 +418,7 @@ h1 {
   min-height: 50vh;
   background-color: #F2F1EC;
   background: linear-gradient(135deg, #808080cc, rgba(0, 0, 0, 0.4));
-  padding: 2.5rem 0.9rem;
+  padding: 2.5rem 1rem;
   border-radius:  0 0 16px 16px;
   fill: #F2F1EC;
 }
