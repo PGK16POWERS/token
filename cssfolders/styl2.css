@@ -75,7 +75,7 @@ header {
     background-color: #f34e1c;
 }
 @media (max-width: 800px) {
-    .whole-card {S
+    .whole-card {
     padding: 0.3rem;
 }
     .new-arr-header {
@@ -336,7 +336,7 @@ header {
     width: 100%;
     display: flex;
     flex-direction: column;
-    row-gap: 1rem;
+    row-gap: 0.7rem;
     padding: 0.5rem;
 }
 .price-tag {
@@ -364,13 +364,36 @@ header {
     color: #030b12;
     cursor: pointer;
 }
+.groupBtnDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 0.3rem;
+    height: 100%;
+}
+#add-to-cart {
+    font-size: 33px;
+    background-color: #257cd3;
+    width: 20%;
+    height: 100%;
+    padding: 0.8rem 1rem;
+    border-radius: 3px 3px 13px 3px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    color: white;
+}
+#add-to-cart:hover,
+#add-to-cart:active {
+    background-color: #0a61b8;
+}
 #wa-redi {
     font-size: 33px;
     background-color: #25D366;
-    width: 100%;
+    width: 80%;
     height: 100%;
     padding: 0.8rem 1rem;
-    border-radius: 3px;
+    border-radius: 3px 3px 3px 13px;
     display: flex;
     justify-content: center;
     cursor: pointer;
@@ -380,6 +403,22 @@ header {
 }
 .whi {
     color: white;
+}
+#checkoutRedirect {
+    position: fixed;
+    left:16px;
+    bottom: 16px;
+    font-size: 40px;
+    background-color: rgb(255, 89, 0);
+    width: 70px;
+    height: 70px;
+    padding: 0.8rem 1rem;
+    border-radius: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
 }
 @media (max-width: 800px) {
     .cont-header {
@@ -401,7 +440,6 @@ header {
     font-size: 0.9em;
 }
     .checkout {
-    row-gap: 1.5rem;
     padding: 0rem;
 }
     .price-tag {
@@ -428,3 +466,4 @@ header {
     
 }
 /**** DESCRIPTION CARD ****/
+}

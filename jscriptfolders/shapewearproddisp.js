@@ -15,8 +15,6 @@ document.addEventListener("DOMContentLoaded", () => {
         })
 })
 
-
-
 function createFrontProdCard(product) {
     // PARENT CARD
     const parentCard = document.createElement("div");
@@ -233,10 +231,14 @@ function createFrontProdCard(product) {
     descCheckOutBtn.setAttribute("type","button");
     checkoutBtnDiv.appendChild(descCheckOutBtn);
 
+    const groupBtnDiv = document.createElement("div");
+    groupBtnDiv.setAttribute("class","groupBtnDiv");
+    checkoutDiv.appendChild(groupBtnDiv);
+
     const inquire = document.createElement("span");
     inquire.className = "material-symbols-outlined";
     inquire.id = "wa-redi";
-    checkoutBtnDiv.appendChild(inquire);
+    groupBtnDiv.appendChild(inquire);
 
     const innerA = document.createElement("a");
     innerA.setAttribute("href","https://wa.me/0634927047?text=Hello%2C%20I%20would%20love%20to%20purchase%20this%20item.");
@@ -244,6 +246,35 @@ function createFrontProdCard(product) {
     innerA.setAttribute("class","whi");
     innerA.textContent = "forum";
     inquire.appendChild(innerA);
+
+    // Create the "Add to Cart" button
+    const addToCart = document.createElement("span");
+    addToCart.setAttribute("class", "material-symbols-outlined");
+    addToCart.setAttribute("id", "add-to-cart");
+    addToCart.textContent = "add_shopping_cart";
+    groupBtnDiv.appendChild(addToCart);
+
+    var checkoutPresent = false;
+
+    addToCart.addEventListener("click", () => {
+        if (!checkoutPresent) {
+            const checkoutPageRedirect = document.createElement("span");
+            checkoutPageRedirect.setAttribute("class", "material-symbols-outlined");
+            checkoutPageRedirect.setAttribute("id", "checkoutRedirect");
+            checkoutPageRedirect.textContent = "receipt_long";
+
+            document.body.appendChild(checkoutPageRedirect);
+
+            checkoutPresent = true;
+
+            checkoutPageRedirect.addEventListener("click", ()=> {
+                window.location.href = "checkout"
+            })
+        }
+
+        localStorage.setItem(prodCardName.textContent, product.price);
+    });
+
     //-------------- CHECKOUT DIV ---------------------------------
 
     return parentCard;

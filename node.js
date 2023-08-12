@@ -60,6 +60,10 @@ app.get("/perfumepage", (req,res)=> {
     res.sendFile(path.join(__dirname,'perfumepage.html'));
 });
 
+app.get("/checkout",(req,res)=>{
+    res.render("checkout.ejs");
+})
+
 app.post("/newslletter", async (req,res) => {
     const { name, number, email } = req.body;
     const newUser = { name, number, email };
@@ -74,7 +78,7 @@ app.post("/newslletter", async (req,res) => {
             console.log("New doc created:",addUser);
             res.render("/index.ejs");
         } else {
-            res.render("")
+            res.render("/innerlayout.html");
         }
         } catch (error) {
             console.log("Error experienced while trying to create mew doc:",error)
