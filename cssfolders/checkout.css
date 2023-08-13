@@ -41,8 +41,8 @@
     border-radius: 5px;
     background-color: #feebdec9;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    justify-content: space-between;
+    align-items: center;
     row-gap: 0.5rem;
 }
 .prodName {
@@ -50,7 +50,6 @@
     letter-spacing: 1px;
     font-family: var(--monts);
     font-weight: 300;
-    width: 50%;
     color: rgb(68, 62, 54);
 }
 .total {
@@ -58,7 +57,24 @@
     letter-spacing: 1px;
     font-family: var(--monts);
     font-weight: 300;
-
+}
+.leftside {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.7rem;
+    align-items: flex-start;
+    width: 60%;
+}
+.rightside {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+}
+#deleteAll {
+    font-size: 28px;
+    color: salmon;
+    cursor: pointer;
 }
 @media (max-width: 800px) {
     #checkout-list {
