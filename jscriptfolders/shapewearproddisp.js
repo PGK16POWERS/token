@@ -272,7 +272,16 @@ function createFrontProdCard(product) {
             })
         }
 
-        localStorage.setItem(prodCardName.textContent, product.price);
+        const prodID = product.id;
+        const crued = {
+            image: product.image,
+            name: product.name,
+            price: product.price,
+            quantity: 1
+        }
+        const productItself = JSON.stringify(crued);
+
+        localStorage.setItem(`Product ${prodID}`, productItself);
     });
 
     //-------------- CHECKOUT DIV ---------------------------------
