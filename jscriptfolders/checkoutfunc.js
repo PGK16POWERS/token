@@ -3,15 +3,20 @@ document.addEventListener("DOMContentLoaded",() => {
     const totalPrice = document.querySelector("#total-price");
     let addedUp = 0;
 
-    for(let i = 0; i < localStorage.length; i++) {
-        var keys = localStorage.key(i);
-        var values = localStorage.getItem(keys);
-        receiptItem(keys,values);
+    function retriveveData(){
+        for(let i = 0; i < localStorage.length; i++) {
+        const prodID = localStorage.key(i);
+        const storageItems = JSON.parse(localStorage.getItem(localStorage.key(i)));
+        console.log(prodID)
 
-        addedUp += parseFloat(values);
+        receiptItem(storageItems,prodID);
+
+        addedUp += parseFloat(storageItems.price);
+        }
     }
+    
 
-    function receiptItem(keys,values) {
+    function receiptItem(storageItems, prodID) {
         const receiptItem = document.createElement("div");
         receiptItem.setAttribute("class","receiptItem");
         ul.appendChild(receiptItem);
@@ -22,11 +27,11 @@ document.addEventListener("DOMContentLoaded",() => {
 
         const prodName = document.createElement("p");
         prodName.setAttribute("class","prodName");
-        prodName.textContent = keys;
+        prodName.textContent = storageItems.name;
         leftSide.appendChild(prodName);
 
         const prodPrice = document.createElement("p");
-        prodPrice.textContent = `R ${values}.00`;
+        prodPrice.textContent = `R ${storageItems.price}.00`;
         prodPrice.setAttribute("class","total");
         leftSide.appendChild(prodPrice);
 
@@ -41,13 +46,17 @@ document.addEventListener("DOMContentLoaded",() => {
         rightSide.appendChild(deleteAll);
 
             deleteAll.addEventListener("click", () => {
-                localStorage.removeItem(keys);
+                localStorage.removeItem(prodID);
             })
             // CREATE A FUNCTION THAT, WHEN THE DELETEALL BUTTON IS CLICKED, 
             // THE KEY IS REMOVED AND THE DIV IS REMOVED, ALSO THE ITEMS PRICE IS 
             // IS SUBTRACTED FROM THE TOTAL PRICE. 
     }
 
-    totalPrice.textContent = `R ${addedUp.toFixed(2)}`;
-    
-})
+    window.addEventListener("storage", () => {
+        totalPrice.textContent = `R ${addedUp.toFixed(2)}`;
+        addedUp += parseFloat(storageItems.price);
+    })
+    addedUp += parseFloat(storageItems.price);
+    retriveveData()
+}) 
