@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded",() => {
     const ul = document.querySelector("#checkout-list");
     const totalPrice = document.querySelector("#total-price");
-    let addedUp = 0;
 
     function retriveveData(){
         for(let i = 0; i < localStorage.length; i++) {
@@ -11,7 +10,7 @@ document.addEventListener("DOMContentLoaded",() => {
 
         receiptItem(storageItems,prodID);
 
-        addedUp += parseFloat(storageItems.price);
+        totalPrice.textContent = `R ${parseFloat(storageItems.price)}.00`
         }
     }
     
@@ -39,6 +38,11 @@ document.addEventListener("DOMContentLoaded",() => {
         rightSide.setAttribute("class","rightside");
         receiptItem.appendChild(rightSide);
 
+        const quntInp = document.createElement("input");
+        quntInp.setAttribute("type","tel");
+        quntInp.setAttribute("id","quntInp");
+        rightSide.appendChild(quntInp);
+
         const deleteAll = document.createElement("span");
         deleteAll.textContent = "delete";
         deleteAll.setAttribute("class","material-symbols-outlined");
@@ -48,15 +52,8 @@ document.addEventListener("DOMContentLoaded",() => {
             deleteAll.addEventListener("click", () => {
                 localStorage.removeItem(prodID);
             })
-            // CREATE A FUNCTION THAT, WHEN THE DELETEALL BUTTON IS CLICKED, 
-            // THE KEY IS REMOVED AND THE DIV IS REMOVED, ALSO THE ITEMS PRICE IS 
-            // IS SUBTRACTED FROM THE TOTAL PRICE. 
+
     }
 
-    window.addEventListener("storage", () => {
-        totalPrice.textContent = `R ${addedUp.toFixed(2)}`;
-        addedUp += parseFloat(storageItems.price);
-    })
-    addedUp += parseFloat(storageItems.price);
     retriveveData()
 }) 

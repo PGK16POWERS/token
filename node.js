@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const path = require("path");
 const ejs = require("ejs");
-const helmet = require("helmet");
+//const helmet = require("helmet");
 const bodyParser = require("body-parser");
 const { MongoClient, ServerApiVersion } = require("mongodb");
 
@@ -19,8 +19,8 @@ const client = new MongoClient(uri, {
 
 app.set("view engine","ejs");
 //app.use(helmet());
-app.use(express.urlencoded({extended:true}));
-app.use(express.json());
+app.use(bodyParser.urlencoded({extended:true}));
+app.use(bodyParser.json());
 app.use(express.static("cssfolders"));
 app.use(express.static("htmlfolders"));
 app.use(express.static("jscriptfolders"));
