@@ -21,10 +21,8 @@ app.set("view engine","ejs");
 //app.use(helmet());
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
-app.use(express.static("cssfolders"));
-app.use(express.static("htmlfolders"));
+app.use(express.static("public"))
 app.use(express.static("jscriptfolders"));
-app.use(express.static("photos"));
 app.use(express.static("views"));
 
 async function mongoConnect() {
@@ -40,24 +38,24 @@ app.get("/",(req,res) => {
     res.render("index.ejs");
 })
 
-app.get("/innerlayout", (req,res)=> {
-    res.sendFile(path.join(__dirname,'innerlayout.html'));
+app.get("/dashboard", (req,res)=> {
+    res.render("dashboard.ejs");
 });
 
 app.get("/skincare-products", (req,res)=> {
-    res.sendFile(path.join(__dirname,'skincare-products.html'));
+    res.render("skincare-products.ejs");
 });
 
-app.get("/Shapewear", (req,res)=> {
-    res.sendFile(path.join(__dirname,'Shapewear.html'));
+app.get("/shapewear", (req,res)=> {
+    res.render("shapewear.ejs");
 });
 
 app.get("/hairproducts", (req,res)=> {
-    res.sendFile(path.join(__dirname,'hairproducts.html'));
+    res.render("hairproducts.ejs");
 });
 
 app.get("/perfumepage", (req,res)=> {
-    res.sendFile(path.join(__dirname,'perfumepage.html'));
+    res.render("perfumepage.ejs");
 });
 
 app.get("/checkout",(req,res)=>{
@@ -87,6 +85,7 @@ app.post("/newslletter", async (req,res) => {
 })
 
 mongoConnect()
+
 app.listen(4500, () => {
     console.log("server connected on port 4500");
 });
