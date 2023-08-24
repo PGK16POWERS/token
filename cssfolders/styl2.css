@@ -359,25 +359,24 @@ header {
     font-family: var(--pops);
     font-weight: 300;
     letter-spacing: 2px;
-    background-color: #767d86;
-    opacity: 20%;
-    color: #030b12;
+    background-color: #116ee7;
+    opacity: 100%;
+    color: #ffffff;
     cursor: pointer;
 }
 .groupBtnDiv {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    column-gap: 0.3rem;
     height: 100%;
 }
 #add-to-cart {
     font-size: 33px;
-    background-color: #257cd3;
-    width: 20%;
+    background-color: #25D366;
+    width: 100%;
     height: 100%;
     padding: 0.8rem 1rem;
-    border-radius: 3px 3px 13px 3px;
+    border-radius: 3px;
     display: flex;
     justify-content: center;
     cursor: pointer;
@@ -387,17 +386,7 @@ header {
 #add-to-cart:active {
     background-color: #0a61b8;
 }
-#wa-redi {
-    font-size: 33px;
-    background-color: #25D366;
-    width: 80%;
-    height: 100%;
-    padding: 0.8rem 1rem;
-    border-radius: 3px 3px 3px 13px;
-    display: flex;
-    justify-content: center;
-    cursor: pointer;
-}
+
 #wa-redi:hover, #wa-redi:active {
     background-color: #00e454;
 }

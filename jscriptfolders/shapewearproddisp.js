@@ -31,6 +31,7 @@ function createFrontProdCard(product) {
 
     const image = document.createElement("img");
     image.src = product.image;
+    image.setAttribute("loading","lazy")
     image.className = "card-img";
     imgDiv.appendChild(image);
 
@@ -46,11 +47,6 @@ function createFrontProdCard(product) {
     const divLine = document.createElement("div");
     divLine.className = "prod-div-line";
     cardHeaders.appendChild(divLine);
-
-    const prodDesc = document.createElement("p");
-    prodDesc.textContent = product.description;
-    prodDesc.className = "desc-of-item";
-    cardHeaders.appendChild(prodDesc);
 
     const prodPrice = document.createElement("h3");
     prodPrice.textContent = `R ${product.price.toFixed(2)}`;
@@ -234,18 +230,6 @@ function createFrontProdCard(product) {
     const groupBtnDiv = document.createElement("div");
     groupBtnDiv.setAttribute("class","groupBtnDiv");
     checkoutDiv.appendChild(groupBtnDiv);
-
-    const inquire = document.createElement("span");
-    inquire.className = "material-symbols-outlined";
-    inquire.id = "wa-redi";
-    groupBtnDiv.appendChild(inquire);
-
-    const innerA = document.createElement("a");
-    innerA.setAttribute("href","https://wa.me/0634927047?text=Hello%2C%20I%20would%20love%20to%20purchase%20this%20item.");
-    innerA.setAttribute("target","_blank");
-    innerA.setAttribute("class","whi");
-    innerA.textContent = "forum";
-    inquire.appendChild(innerA);
 
     // Create the "Add to Cart" button
     const addToCart = document.createElement("span");
