@@ -76,6 +76,17 @@
     color: salmon;
     cursor: pointer;
 }
+.qty-div {
+    display: flex;
+    gap: 0.3rem;
+    align-items: center;
+}
+.min-plus {
+    padding: 0.5rem;
+    border: 0 solid transparent;
+    border-radius: 10px;
+    font-size: 1em;
+}
 @media (max-width: 800px) {
     #checkout-list {
     width: 95%;
