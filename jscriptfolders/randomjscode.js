@@ -7,16 +7,16 @@ export function chopra() {
             const targetPage = button.getAttribute("data-target")
             window.location.href = targetPage;
 
-            if (targetPage === "innerlayout.html"){
-                window.location.href = '/innerlayout.html';
-            } else if ( targetPage === "skincare-products.html") {
-                window.location.href = "/skincare-products.html";
-            } else if ( targetPage === "hairproducts.html") {
-                window.location.href = "/hairproducts.html";
-            } else if ( targetPage === "perfumepage.html") {
-                window.location.href = "/perfumepage.html";
-            } else if ( targetPage === "Shapewear.html") {
-                window.location.href = "/Shapewear.html";
+            if (targetPage === "dashboard"){
+                window.location.href = '/dashboard.ejs';
+            } else if ( targetPage === "skincare-products") {
+                window.location.href = "/skincare-products.ejs";
+            } else if ( targetPage === "hairproducts") {
+                window.location.href = "/hairproducts.ejs";
+            } else if ( targetPage === "perfumepage") {
+                window.location.href = "/perfumepage.ejs";
+            } else if ( targetPage === "shapewear") {
+                window.location.href = "/shapewear.ejs";
             }
         });
     });

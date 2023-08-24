@@ -32,23 +32,23 @@
     background-position: 0 -5px;
 }
 .prod-child:nth-child(1) {
-    background-image: url(newarr.png);
+    background-image: url(/photos/newarr.png);
     background-position: 0 -100px;
 }
 .prod-child:nth-child(2) {
-    background-image: url(skincarediv.png);
+    background-image: url(/photos/skincarediv.png);
     background-position: 0 -90px;
 }
 .prod-child:nth-child(3) {
-    background-image: url(shapewearproddiv.png);
+    background-image: url(/photos/shapewearproddiv.png);
     background-position: 0 -90px;
 }
 .prod-child:nth-child(4) {
-    background-image: url(hairproddiv.png);
+    background-image: url(/photos/hairproddiv.png);
     background-position: 0 -90px;
 }
 .prod-child:nth-child(5) {
-    background-image: url(fragprodDiv.png);
+    background-image: url(/photos/fragprodDiv.png);
     background-position: 0 -90px;
 }
 .modal-name {
@@ -123,5 +123,4 @@
     font-weight: 500;
     padding:0.7rem 2rem
 }
-
 /**** MODAL DIV ****/
