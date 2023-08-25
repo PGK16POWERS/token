@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel="icon" type="image/png" sizes="32x32" href="NAHProducts.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="NAHProducts.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="photos/NAHProducts.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="photos/NAHProducts.png">
         <title>NAH INC.</title>
         <link rel="stylesheet" href="/cssfolders/styl.css">
         <script defer src="/main2.js" type="module"></script>
         <script defer src="/indFunc.js"></script>
+        <script defer src="/cartqtyfunc.js"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -138,37 +139,7 @@
 
     </section>
 
-    <footer >
-        <h2 class="sec-header">You've reached the end</h2>
-        <div class="div-footer">
-
-            <div class="foot-kid">
-                <h3 class="foot-header">Socials</h3>
-                <ul>
-                    <li><a href="https://www.instagram.com/nahproducts/" class="footer-links">Instagram</a></li>
-                    <li><a href="https://wa.me/27634927047" class="footer-links">Whatsapp</a></li>
-                    <li><a href="mailto:nahproducts@gmail.com?subject=Business&body=I%20would%20like%20to%20inquire%20about%20a%20product%20on%20your%20catalogue..." class="footer-links">nahproducts</a></li>
-                </ul>
-            </div>
-
-            <div class="foot-kid">
-                <h3 class="foot-header">Help</h3>
-                <ul>
-                    <li><a href="#" class="footer-links">Terms of use</a></li>
-                    <li><a href="#" class="footer-links">FAQ</a></li>
-                </ul>
-            </div>
-
-            <div class="foot-kid">
-                <h3 class="foot-header">Web stuff</h3>
-                <ul>
-                    <li><a href="https://github.com/PGK16POWERS/NahInc." class="footer-links">Github</a></li>
-                </ul>
-            </div>
-
-        </div>
-
-    </footer>
+    <%- include("partials/footer.ejs") %>
 
     <section class="bui-by-us">
         <div>

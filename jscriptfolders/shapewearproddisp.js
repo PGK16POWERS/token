@@ -269,6 +269,5 @@ function createFrontProdCard(product) {
     });
 
     //-------------- CHECKOUT DIV ---------------------------------
-
     return parentCard;
 }
